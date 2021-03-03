@@ -87,6 +87,7 @@ html {
     visibility: visible;
     opacity: 1;
 }
+
 .header .menu li:nth-child(6) .a::after {
     left: 0;
     bottom: auto;
@@ -228,15 +229,31 @@ html {
 .p-list .btn {
     padding: 10px 30px;
     font-weight: 600;
-    border-color: #6278df;
+    border: 3px solid #6278df;
     color: #6278df;
+    position: relative;
 }
 
 .p-list .btn:hover {
-    color: #fff;
-    background: #6278df;
+background-color: #fff;
+color: #6278df;
+   
 }
 
+.p-list .btn::before {
+    content: "";
+    position: absolute;
+    transition: 1s;
+    left: 0;
+    bottom: auto;
+    top: -3px;
+    width: 100%;
+    height: 3px;
+    background: #6278df;
+}
+.p-list .btn:hover::before{
+    top: calc(100% - 3px);
+}
 /* team-section */
 .team-section img {
     margin-left: -130px;
