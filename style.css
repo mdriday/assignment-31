@@ -34,7 +34,7 @@ html {
     position: relative;
 }
 
-.header .menu li a {
+.header .menu li .a {
     display: inline-block;
     text-decoration: none;
     font-size: 20px;
@@ -45,11 +45,11 @@ html {
     position: relative;
 }
 
-.header .menu li a::before {
+.header .menu li .a::after {
     content: "";
     position: absolute;
     bottom: -3px;
-    left: 0;
+    right: 50%;
     width: 0;
     height: 8%;
     background-color: #62bdfc;
@@ -57,27 +57,52 @@ html {
 
 }
 
-.header .menu li a:hover::before {
-    width: 50%;
-}
-
-.header .menu li a::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
+.header .menu li .a:hover::after {
+    width: 100%;
     right: 0;
-    width: 0;
-    height: 8%;
-    background-color: #62bdfc;
-    transition: .4s;
+}
+
+.header .menu li:nth-child(2) .a::after {
+    left: 0;
 
 }
 
-.header .menu li a:hover::after {
-    width: 50%;
+.header .menu li:nth-child(3) .a::after {
+    left: auto;
+    right: 0;
+
 }
 
-.header .menu li a:hover {
+.header .menu li:nth-child(4) .a::after {
+    left: 0;
+    bottom: auto;
+    top: -3px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .menu li:hover:nth-child(4) .a::after {
+    top: calc(100% - 3px);
+    visibility: visible;
+    opacity: 1;
+}
+.header .menu li:nth-child(6) .a::after {
+    left: 0;
+    bottom: auto;
+    top: -3px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .menu li:hover:nth-child(6) .a::after {
+    top: calc(100% - 3px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.header .menu li .a:hover {
     color: black;
 }
 
@@ -114,7 +139,8 @@ html {
     line-height: 40px;
     color: #9b8f8fe6;
     transition: .4s;
-
+    text-decoration: none;
+    position: relative;
 }
 
 .header .menu li ul li a:hover {
@@ -123,14 +149,11 @@ html {
     color: #fff;
 }
 
-.header .menu li ul li:first-child {
-    border-top: 4px solid #62bdfc;
-}
-
 .header .menu li:hover ul {
     opacity: 1;
     visibility: visible;
 }
+
 
 /* slider section */
 .slider-section p {}
