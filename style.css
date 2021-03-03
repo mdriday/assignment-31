@@ -1,0 +1,285 @@
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 20px;
+}
+
+/* header Section */
+.header {
+    padding: 16px 0;
+    background: #fff;
+}
+
+.header .logo {}
+
+.header .logo img {}
+
+.header .logo span {
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 5px;
+    display: inline-block;
+    color: #000;
+}
+
+.header .menu {
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.header .menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.header .menu li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 20px;
+    font-weight: 600;
+    color: #9c9393;
+    transition: .4s;
+    position: relative;
+}
+
+.header .menu li a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 8%;
+    background-color: #62bdfc;
+    transition: .4s;
+
+}
+
+.header .menu li a:hover::before {
+    width: 50%;
+}
+
+.header .menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    width: 0;
+    height: 8%;
+    background-color: #62bdfc;
+    transition: .4s;
+
+}
+
+.header .menu li a:hover::after {
+    width: 50%;
+}
+
+.header .menu li a:hover {
+    color: black;
+}
+
+.header .menu li span {
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    top: -4px;
+    left: 0;
+}
+
+/* dropdwon section */
+.header .menu li ul {
+    position: absolute;
+    top: 102%;
+    left: -28%;
+    width: 150px;
+    background-color: #fff;
+    padding: 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.header .menu li ul li {
+    display: block;
+}
+
+.header .menu li ul li a {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    line-height: 40px;
+    color: #9b8f8fe6;
+    transition: .4s;
+
+}
+
+.header .menu li ul li a:hover {
+    border-top: #8392ff;
+    background-color: #62bdfc;
+    color: #fff;
+}
+
+.header .menu li ul li:first-child {
+    border-top: 4px solid #62bdfc;
+}
+
+.header .menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* slider section */
+.slider-section p {}
+
+.slider-section .btn {
+    background: #8490ff;
+    transition: .4s;
+    font-weight: 600;
+    border-color: #8490ff;
+}
+
+.slider-section .btn:hover {
+    background: #fff;
+    color: #8490ff;
+}
+
+/* about-section */
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    opacity: .5;
+}
+
+.about-section .btn {
+    background: #8490ff;
+    border-color: #8490ff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: .4s;
+}
+
+.about-section .btn:hover {
+    background: #fff;
+    color: #8490ff;
+}
+
+.about-section img {
+    border: none;
+}
+
+/* counter-section */
+.counter-section {
+    background-color: #8490ff;
+}
+
+/* Pricing Section */
+.p-list {}
+
+.p-list span {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: #f9f9ff;
+    display: inline-block;
+    font-size: 2.3rem;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.p-list ul {
+    list-style: none;
+}
+
+.p-list ul li {
+    padding-bottom: 30px;
+    color: #000;
+    opacity: 0.4;
+    font-weight: 600;
+}
+
+.p-list .btn {
+    padding: 10px 30px;
+    font-weight: 600;
+    border-color: #6278df;
+    color: #6278df;
+}
+
+.p-list .btn:hover {
+    color: #fff;
+    background: #6278df;
+}
+
+/* team-section */
+.team-section img {
+    margin-left: -130px;
+    position: relative;
+    bottom: 50px;
+}
+
+.team-section p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #767676;
+}
+
+.team-section .btn {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, .375);
+    border: none;
+    padding: 4px 10px;
+    font-weight: 600;
+}
+
+.team-section h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    opacity: .7;
+    margin-bottom: 30px;
+}
+
+.team-section h5 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.team-section p {}
+
+/* .team-list {
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, .175);
+	padding: 0 20px 30px;
+} */
+
+.team-list h5 {
+    margin-top: -50px;
+}
+
+.team-list h4 {
+    margin-bottom: 13px;
+}
+
+.team-list p {}
+
+
+/* contct-section */
+.contct-section .btn {
+    background: #17a2b8;
+    border-color: #17a2b8;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: .4s;
+}
+
+.contct-section .btn:hover {
+    color: #17a2b8;
+    background: #fff;
+}
+
+footer {
+    background-color: #04091e;
+}
+
+footer p {}
